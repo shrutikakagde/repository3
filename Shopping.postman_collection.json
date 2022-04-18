@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "273d1cac-f438-4d35-812e-11332f5fdbbd",
+		"name": "Shopping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"id\":21,\r\n\"productName\":\"Mobile\",\r\n\"price\":60000,\r\n\"productType\":\"phone\",\r\n\"description\":\" ram=4GB, rom =64gb\",\r\n\"productId\":34,\r\n\"brandName\":\"MI\",\r\n\"category\":\"Electronic\",\r\n\"size\":6.4,\r\n\"type\":\"Android\"\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":22,\r\n\"productName\":\"Laptop\",\r\n\"price\":70000,\r\n\"productType\":\"Laptop\",\r\n\"description\":\" ram=8GB, rom =256gb\",\r\n\"productId\":35,\r\n\"brandName\":\"Dell\",\r\n\"category\":\"Electronic\",\r\n\"size\":13,\r\n\"type\":\"Window\"\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":22,\r\n\"productName\":\"Laptop\",\r\n\"price\":70000,\r\n\"productType\":\"Laptop\",\r\n\"description\":\" ram=8GB, rom =256gb\",\r\n\"productId\":35,\r\n\"brandName\":\"Dell\",\r\n\"category\":\"Electronic\",\r\n\"size\":13,\r\n\"type\":\"Window\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
